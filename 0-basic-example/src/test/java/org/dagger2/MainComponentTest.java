@@ -42,7 +42,7 @@ public class MainComponentTest {
         final Car secondCar = mainComponent.car();
 
         // Then
-        // We expect new instances of the same car each time
+        // We expect new instances of the same car each time AND that new engine instance is provided to each car
         Assertions.assertNotSame(firstCar, secondCar);
         Assertions.assertNotSame(firstCar.engine, secondCar.engine);
     }
