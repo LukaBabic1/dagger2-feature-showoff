@@ -1,4 +1,6 @@
 
+# Basic example
+
 This basic example shows how dagger, when simplest component is generated,
 will automatically detect classes which have `@Inject` annotated constructor and 
 will be able provide instances of those objects.
