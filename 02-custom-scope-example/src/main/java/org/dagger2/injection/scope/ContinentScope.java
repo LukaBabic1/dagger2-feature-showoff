@@ -1,4 +1,4 @@
-package org.dagger2.injection;
+package org.dagger2.injection.scope;
 
 import javax.inject.Scope;
 

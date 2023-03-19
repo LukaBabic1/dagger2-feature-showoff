@@ -1,6 +1,7 @@
-package org.dagger2.injection;
+package org.dagger2.injection.component;
 
 import dagger.Component;
+import org.dagger2.model.Ocean;
 import org.dagger2.model.Planet;
 
 import javax.inject.Singleton;
@@ -10,4 +11,6 @@ import javax.inject.Singleton;
 public interface PlanetComponent {
 
     Planet planet();
+
+    Ocean ocean();
 }
