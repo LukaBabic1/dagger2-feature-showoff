@@ -1,11 +1,11 @@
 package org.dagger2.model;
 
-import org.dagger2.injection.ContinentScope;
+import org.dagger2.injection.scope.ContinentScope;
 
 import javax.inject.Inject;
 
 @ContinentScope
-public class Continent {
+public final class Continent {
 
     public final Planet planet;
 

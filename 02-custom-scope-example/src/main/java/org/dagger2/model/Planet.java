@@ -4,7 +4,7 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
-public class Planet {
+public final class Planet {
 
     @Inject
     public Planet() {
