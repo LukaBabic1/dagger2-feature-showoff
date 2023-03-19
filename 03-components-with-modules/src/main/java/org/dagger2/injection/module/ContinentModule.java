@@ -9,6 +9,8 @@ import org.dagger2.model.Planet;
 @Module
 public final class ContinentModule {
 
+    // This name parameter is added only to force Dagger to require instance of ContinentModule when constructing
+    // component which includes this module.
     private final String name;
 
     public ContinentModule(final String name) {
