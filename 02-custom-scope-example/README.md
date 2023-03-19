@@ -40,3 +40,10 @@ Look at these implementation details as convenience, they will be described in m
 ## Note about classes and abstractions
 Do not take these abstractions seriously, they only serve as understandable-enough concepts for everyone to understand what is being
 described in particular example.
+
+## Practice assignment
+Try the following:
+1. Removing `PlanetComponent.ocean()` method and run the tests. 
+   1. Do tests compile and why?
+2. Obtain reference to Planet through ContinentComponent
+   1. What changes are required to achieve this?
