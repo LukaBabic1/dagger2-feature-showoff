@@ -30,6 +30,12 @@ be needed to consistently used in injection mechanism to work.
 In this particular example we added more than one new Dagger feature into play. Except from adding new `@ContinentScope` annotation 
 and scoped component, we introduced concept of component dependency where ContinentComponent depends on PlanetComponent. 
 
+```
+@Component(
+        dependencies = PlanetComponent.class
+)
+```
+
 This was added so Dagger could provide `Ocean` to `Continent` object. Also we needed to add `PlanetComponent.ocean()` method to 
 propagate the object provided from `PlanetComponent` downstream (i.e., components which depend on PlanetComponent). Adding this
 method was nothing new, but in this case this method is used implicitly by Dagger, not by tests as before.
