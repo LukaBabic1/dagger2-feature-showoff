@@ -1,8 +1,8 @@
 package org.dagger2;
 
 import org.dagger2.injection.component.ContinentComponent;
-import org.dagger2.injection.DaggerContinentComponent;
-import org.dagger2.injection.DaggerPlanetComponent;
+import org.dagger2.injection.component.DaggerContinentComponent;
+import org.dagger2.injection.component.DaggerPlanetComponent;
 import org.dagger2.injection.component.PlanetComponent;
 import org.dagger2.model.Continent;
 import org.dagger2.model.Ocean;
