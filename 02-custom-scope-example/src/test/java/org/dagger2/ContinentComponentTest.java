@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class ContinentComponentTest {
+public final class ContinentComponentTest {
 
     private PlanetComponent planetComponent;
     private ContinentComponent continentComponent;
