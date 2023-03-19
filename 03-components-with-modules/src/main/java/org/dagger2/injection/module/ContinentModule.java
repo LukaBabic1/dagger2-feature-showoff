@@ -20,6 +20,6 @@ public final class ContinentModule {
     @Provides
     @ContinentScope
     Continent provideContinent(final Planet planet) {
-        return new Continent(planet);
+        return new Continent(planet, name);
     }
 }

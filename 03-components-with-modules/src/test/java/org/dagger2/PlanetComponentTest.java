@@ -24,7 +24,7 @@ public final class PlanetComponentTest {
 
         continentComponent = DaggerContinentComponent.builder()
                                                      .planetComponent(planetComponent)
-                                                     .continentModule(new ContinentModule("Module name"))
+                                                     .continentModule(new ContinentModule("Default module name"))
                                                      .build();
     }
 
@@ -48,7 +48,7 @@ public final class PlanetComponentTest {
         final Continent continent = continentComponent.continent();
         final ContinentComponent differentContinentComponent = DaggerContinentComponent.builder()
                                                                                        .planetComponent(planetComponent)
-                                                                                       .continentModule(new ContinentModule("Continent module name"))
+                                                                                       .continentModule(new ContinentModule("Alternative module name"))
                                                                                        .build();
 
         // When
@@ -57,6 +57,9 @@ public final class PlanetComponentTest {
         // Then
         Assertions.assertNotSame(continent, newContinent);
         Assertions.assertSame(continent.planet, newContinent.planet);
+
+        Assertions.assertEquals("Default module name", continent.text);
+        Assertions.assertEquals("Alternative module name", newContinent.text);
     }
 
     @Test
